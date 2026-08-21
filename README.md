@@ -44,12 +44,3 @@ A working, deployed, publicly accessible app that demonstrates the complete requ
 - **Storage:** JSON file
 - **Deployment:** Render
 
-## Running locally
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-Then open `http://localhost:3000` in your browser.
