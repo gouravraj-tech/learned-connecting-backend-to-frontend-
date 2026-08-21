@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MiniApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== AUTH SCREEN (shown when NOT logged in) ===== -->
+  <div id="auth-screen" class="card">
+    <h2>Login / Sign Up</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+
+    <div class="btn-row">
+      <button id="signup-btn">Sign Up</button>
+      <button id="login-btn">Login</button>
+    </div>
+
+    <p id="auth-message" class="message"></p>
+  </div>
+
+  <!-- ===== APP SCREEN (shown when logged in) ===== -->
+  <div id="app-screen" class="card hidden">
+    <h2>Welcome, <span id="welcome-user"></span></h2>
+    <button id="logout-btn">Logout</button>
+
+    <hr />
+
+    <h3>Your Note</h3>
+    <textarea id="note-input" placeholder="Type something..."></textarea>
+    <button id="save-btn">Save Note</button>
+
+    <p id="save-message" class="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
